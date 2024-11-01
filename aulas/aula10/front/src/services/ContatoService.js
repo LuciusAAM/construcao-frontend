@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const uri = import.meta.env.API_URL;
+const url = import.meta.env.API_URL;
 
 function buscarTodos() {}
 
