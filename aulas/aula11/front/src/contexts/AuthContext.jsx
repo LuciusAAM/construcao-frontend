@@ -10,12 +10,15 @@ function AuthProvider(props) {
   });
 
   const login = (dados) => {
-    if (dados.email === "jose@iesb.br" && dados.senha === "abcd1234") {
+    if (dados.email === "lucius@gmail.com" && dados.senha === "abcd1234") {
       setUsuario({
         email: dados.email,
         logado: true,
         token: "1a2b3c4d",
       });
+      return "";
+    } else {
+      return "Login inválido";
     }
   };
 
@@ -39,9 +42,9 @@ function AuthProvider(props) {
 
   return (
     <AuthContext.Provider value={context}>
-        {props.children}
+      {props.children}
     </AuthContext.Provider>
   );
 }
 
-export { AuthContext, AuthProvider};
+export { AuthContext, AuthProvider };
