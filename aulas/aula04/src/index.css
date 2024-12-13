@@ -1,0 +1,10 @@
+*{
+  margin: 0 auto;
+  padding: 0 auti;
+}
+
+body{
+  display: flex;
+  background-color: azure;
+  color: black;
+}
